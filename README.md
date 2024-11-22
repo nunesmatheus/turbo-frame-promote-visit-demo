@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample Rails application that simply demonstrates a turbo frame that promotes navigation to page visit, i.e., it restricts the page changes to the frame, but updates the URL as it changes on the frame.
 
-Things you may want to cover:
+## Running locally
 
-* Ruby version
+```
+bundle install
+rails server
+```
 
-* System dependencies
+## Testing
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Visit http://localhost:3000
+2. Click next and previous pagination links
+3. Notice that the current URL changes on the address bar

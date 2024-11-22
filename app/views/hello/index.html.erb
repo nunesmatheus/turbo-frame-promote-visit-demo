@@ -1,0 +1,9 @@
+
+<turbo-frame id="pagination" data-turbo-action="advance">
+  <h1>Page <%= @page %></h1>
+  <p>You are currently on page <%= @page %>.</p>
+
+  <%= link_to 'Previous', root_path(page: @page - 1), style: @page <= 1 ? 'visibility:hidden' : '' %>
+
+  <%= link_to 'Next', root_path(page: @page + 1) %>
+</turbo-frame>
